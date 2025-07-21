@@ -52,7 +52,7 @@ export const NeonButton: React.FC<NeonButtonProps> = ({
   variant = 'primary',
   disabled = false,
   loading = false,
-  glowColor = theme.colors.neon.blue,
+  glowColor = theme.colors.neon.purple,
   style,
 }) => {
   console.log('[NeonButton] Rendering button:', title, 'variant:', variant);

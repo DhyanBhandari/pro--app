@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "Connect App",
+    "name": " App",
+    "jsEngine": "hermes",
     "slug": "glassmorphism-connect-app",
     "version": "1.0.0",
     "orientation": "portrait",

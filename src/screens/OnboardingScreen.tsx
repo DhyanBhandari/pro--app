@@ -14,6 +14,8 @@
  */
 
 import React, { useState, useRef } from 'react';
+import { useAnimatedScrollHandler } from 'react-native-reanimated';
+
 import {
   View,
   Text,
@@ -134,9 +136,12 @@ export const OnboardingScreen: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollX = useSharedValue(0);
 
-  const handleScroll = (event: any) => {
-    scrollX.value = event.nativeEvent.contentOffset.x;
-  };
+  const scrollHandler = useAnimatedScrollHandler({
+    onScroll: (event) => {
+      scrollX.value = event.contentOffset.x;
+    },
+  });
+
 
   const handleMomentumScrollEnd = (event: any) => {
     const newIndex = Math.round(event.nativeEvent.contentOffset.x / width);
@@ -204,7 +209,7 @@ export const OnboardingScreen: React.FC = () => {
         pagingEnabled
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item.id.toString()}
-        onScroll={handleScroll}
+        onScroll={scrollHandler}
         onMomentumScrollEnd={handleMomentumScrollEnd}
         scrollEventThrottle={16}
         style={styles.flatList}

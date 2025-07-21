@@ -2,15 +2,18 @@
 // Centralizes all screen exports
 
 /**
- * Screens Export - Phase 1
+ * Connect App - Phase 1
  * 
- * Barrel export for all application screens including
- * splash, onboarding, and authentication screens.
+ * A React Native Expo application with glassmorphism design system
+ * featuring authentication flow, onboarding, and futuristic animations.
  * 
- * @usage import { SplashScreen, LoginScreen } from '@/screens'
+ * @author Developer
+ * @version 1.0.0
+ * @phase 1 - Foundation & Authentication UI
  */
 
 export { SplashScreen } from './SplashScreen';
 export { OnboardingScreen } from './OnboardingScreen';
 export { LoginScreen } from './LoginScreen';
 export { RegisterScreen } from './RegisterScreen';
+export { HomeScreen } from './HomeScreen';
