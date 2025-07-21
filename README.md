@@ -1,4 +1,4 @@
-# Connect App - Phase 1
+# Phase 1
 
 A React Native mobile application with glassmorphism design system and futuristic animations. This is Phase 1 focusing on foundation, authentication UI, and onboarding flow.
 
@@ -157,4 +157,3 @@ Prototype project - Phase 1 development version.
 
 ---
 
-**Built with ❤️ using React Native, Expo, and Glassmorphism Design**
