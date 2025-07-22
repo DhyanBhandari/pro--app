@@ -36,6 +36,10 @@ export type OnboardingStackParamList = {
 
 export type MainStackParamList = {
   Home: undefined;
+  Search: undefined;
+  Matching: { query: string; location?: string };
+  MatchResults: { intentId: string };
+  MatchDetails: { matchId: string; match: any };
   Profile: undefined;
   Settings: undefined;
   // More screens will be added in future phases

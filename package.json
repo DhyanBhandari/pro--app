@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
     "@expo/vector-icons": "^14.0.0",
     "@react-native-async-storage/async-storage": "2.1.2",
     "@react-navigation/native": "^6.1.9",
@@ -21,6 +22,7 @@
     "expo-haptics": "~14.1.4",
     "expo-linear-gradient": "~14.1.5",
     "expo-status-bar": "~2.2.3",
+    "firebase": "^12.0.0",
     "lottie-react-native": "7.2.2",
     "react": "19.0.0",
     "react-dom": "19.0.0",

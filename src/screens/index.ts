@@ -17,3 +17,6 @@ export { OnboardingScreen } from './OnboardingScreen';
 export { LoginScreen } from './LoginScreen';
 export { RegisterScreen } from './RegisterScreen';
 export { HomeScreen } from './HomeScreen';
+export { MatchingScreen } from './MatchingScreen';
+export { MatchResultsScreen } from './MatchResultsScreen';
+export { MatchDetailsScreen } from './MatchDetailsScreen';

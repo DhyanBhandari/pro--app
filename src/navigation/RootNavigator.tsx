@@ -18,8 +18,9 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 
-import { SplashScreen, OnboardingScreen, HomeScreen } from '@/screens'; // ✅ Import HomeScreen
+import { SplashScreen, OnboardingScreen } from '@/screens';
 import { AuthNavigator } from './AuthNavigator';
+import { MainNavigator } from './MainNavigator';
 import { theme } from '@/themes';
 import { RootStackParamList } from '@/types';
 
@@ -77,10 +78,10 @@ export const RootNavigator: React.FC = () => {
           options={{ ...TransitionPresets.SlideFromRightIOS }}
         />
 
-        {/* Home Screen (Main App) */}
+        {/* Main App Flow */}
         <Stack.Screen
           name="Main"
-          component={HomeScreen}
+          component={MainNavigator}
           options={{
             ...TransitionPresets.FadeFromBottomAndroid,
             gestureEnabled: true,
